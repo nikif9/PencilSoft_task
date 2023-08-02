@@ -1,6 +1,6 @@
 <?php
     // Интерфейс для класса Record
-    interface RecordInterface
+    interface IRecord
     {
         public function getAll();
         public function getOne($id);
@@ -9,7 +9,7 @@
         public function delete($id);
     }
 
-    class Record implements RecordInterface
+    class Record implements IRecord
     {
         // Свойства класса для хранения информации о базе данных
         private $db;
